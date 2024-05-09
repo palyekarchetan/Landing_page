@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&family=Sedan+SC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.screen {
+    min-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header_screen{
+    color: white;
+    position: fixed;
+    width: 100% !important;
+    height: 19%;
+}
+
+.logo_style{
+    width: 28%;
+    left: 0%;
+    display: flex;
+    margin: 2% 2%;
+}
+
+.title_div{
+    width: 72%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.title_style{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 40%;
+}
+
+.title_bar{
+    font-family: "Sedan SC", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 43px;
+}
+
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    font-family: "My Soul", cursive;
+    font-weight: 500;
+    font-size: 29px;
+}
+
+.img_style{
+    max-width: 100%;
+    min-width: auto;
+    max-height: 100%;
+    min-height: auto;
+}
+
+.nav_word{
+    color: white;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+}
+
+.smoke_effect{
+    width: 100%;
+    height: 23vh;
+    display: flex;
+    overflow: hidden;
+    background-blend-mode: overlay;
+    position: absolute;
+}
+
+.smoke_style1,
+.smoke_style2,
+.smoke_style3,
+.smoke_style4,
+.smoke_style5,
+.smoke_style6 {
+    width: 184vh;
+    height: 23vh;
+    object-fit: cover;
+    position: relative;
+    animation: moveRightToLeft 60s linear infinite;
+    margin-left: -88vh;
+}
+
+.auto_slider {
+    width: calc(100% + 250px);
+    margin-left: -125px;
+    display: flex;
+    animation: scroll 30s linear infinite;
+    position: fixed;
+}
+
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.list_style{
+    width: 60%;
+    height: 100%;
+}
+
+.list_bar{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 9vh;
+}
+.list_bar li{
+    list-style: none;
+}
+
+#video_style {
+    position: relative;
+    width: 100%;
+    height: 87vh;
+    overflow: hidden;
+    background-blend-mode: overlay;
+}
+
+#my_video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -1;
+}
+
+#main_style{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-blend-mode: overlay;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main_video{
+    position: absolute;
+    top: auto;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.main_screen {
+    min-height: 100vh;
+    color: white;
+}
+
+.footer_screen {
+    min-height: 50%;
+    background-color: black;
+    color: white;
+}
+
+.footer_para{
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.line1{
+    margin-left: 1.5%;
+}
+
+.footer_style{
+    width: 100%;
+    height: 27vh;
+}
+
+.contact_us_label{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.contact_us{
+    display: flex;
+    justify-content: center;
+}
+
+.contact_us li{
+    list-style: none;
+}
+
+.icons{
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.img_footer{
+    max-width: 50px;
+}
+
+@media (max-width: 402px){
+    .nav_bar{
+        display: block;
+        width: 100%;
+    }
+    .title_style{
+        width: 100%;
+    }
+    .list_style{
+        width: 100%;
+    }
+    .smoke_effect,
+    .smoke_style1,
+    .smoke_style2,
+    .smoke_style3,
+    .smoke_style4,
+    .smoke_style5,
+    .smoke_style6{
+        height: 29vh;
+    }
+    .list_bar{
+        margin-top: 0vh;
+    }
+    #video_style{
+        height: 39vh;
+    }
+    .list_bar{
+        display: flex;
+        margin-top: 0vh;
+    }
+    .nav_word{
+        font-size: 54%;
+    }
+    #main_style{
+        height: 40vh;
+    }
+    .footer_para{
+        font-size: 10px;
+    }
+    .footer_style{
+        height: 25vh;
+    }
+    .contact_us_label{
+        font-size: 18px;
+    }
+    .img_footer{
+        max-width: 33px;
+    }
+}
+
+@media(min-width: 402px) and (max-width: 450px){
+    .nav_bar{
+        display: block;
+        width: 100%;
+    }
+    .title_style{
+        width: 100%;
+    }
+    .list_style{
+        width: 100%;
+    }
+    .smoke_effect,
+    .smoke_style1,
+    .smoke_style2,
+    .smoke_style3,
+    .smoke_style4,
+    .smoke_style5,
+    .smoke_style6{
+        height: 26vh;
+    }
+    #video_style{
+        height: 39vh;
+    }
+    .list_bar{
+        display: flex;
+        margin-top: 0vh;
+    }
+    .list_style{
+        height: auto;
+    }
+    .nav_word{
+        font-size: 54%;
+    }
+    #main_style{
+        height: 40vh;
+    }
+    .footer_para{
+        font-size: 12px;
+    }
+    .footer_style{
+        height: 31vh;
+    }
+    .contact_us_label{
+        font-size: 18px;
+    }
+    .img_footer{
+        max-width: 33px;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 501px){
+    #video_style{
+        height: 35vh;
+    }
+    #main_style{
+        height: 35vh;
+    }
+    .smoke_effect,
+    .smoke_style1,
+    .smoke_style2,
+    .smoke_style3,
+    .smoke_style4,
+    .smoke_style5,
+    .smoke_style6{
+        height: 10vh;
+    }
+    .nav_bar{
+        height: 55%;
+    }
+    .title_bar{
+        font-size: 17px;
+    }
+    .nav_word{
+        font-size: 10px;
+    }
+    .list_bar{
+        margin-top: 1vh;
+    }
+    .footer_para{
+        font-size: 11px;
+    }
+    .contact_us_label{
+        font-size: 17px;
+    }
+    .img_footer{
+        max-width: 28px;
+        margin-top: 0%;
+    }
+    
+}
+
+@media (min-width: 501px) and (max-width: 578px){
+    #video_style{
+        height: 40vh;
+    }
+    .logo_style{
+        width: 40%;
+    }
+    #main_style{
+        height: 40vh;
+    }
+    .smoke_effect,
+    .smoke_style1,
+    .smoke_style2,
+    .smoke_style3,
+    .smoke_style4,
+    .smoke_style5,
+    .smoke_style6{
+        height: 13vh;
+    }
+    .nav_bar{
+        height: 55%;
+    }
+    .title_bar{
+        font-size: 17px;
+    }
+    .nav_word{
+        font-size: 14px;
+    }
+    .list_bar{
+        margin-top: 3vh;
+    }
+    .footer_para{
+        font-size: 12px;
+    }
+    .contact_us_label{
+        font-size: 19px;
+    }
+    .img_footer{
+        max-width: 30px;
+        margin-top: 0%;
+    }
+}
+
+@media (min-width: 578px) and (max-width: 650px){
+    #video_style{
+        height: 45vh;
+    }
+    #main_style{
+        height: 50vh;
+    }
+    .smoke_effect,
+    .smoke_style1,
+    .smoke_style2,
+    .smoke_style3,
+    .smoke_style4,
+    .smoke_style5,
+    .smoke_style6{
+        height: 15vh;
+    }
+    .logo_style{
+        width: 40%;
+    }
+    .nav_bar{
+        height: 55%;
+    }
+    .title_bar{
+        font-size: 21px;
+    }
+    .nav_word{
+        font-size: 14px;
+    }
+    .list_bar{
+        margin-top: 4vh;
+    }
+    .footer_para{
+        font-size: 13px;
+    }
+    .contact_us_label{
+        font-size: 19px;
+    }
+    .img_footer{
+        max-width: 30px;
+        margin-top: 0%;
+    }
+}
+
+@media(min-width: 650px) and (max-width: 680px) {
+    .title_bar{
+        font-size: 23px;
+    }
+    .nav_word{
+        font-size: 18px;
+    }
+    #video_style{
+        height: 50vh;
+    }
+    .smoke_effect,
+    .smoke_style1,
+    .smoke_style2,
+    .smoke_style3,
+    .smoke_style4,
+    .smoke_style5,
+    .smoke_style6{
+        height: 18vh;
+    }
+    .list_bar{
+        margin-top: 7vh;
+    }
+    #main_style{
+        height: 70vh;
+    }
+    .footer_para{
+        font-size: 14px;
+    }
+    .contact_us_label{
+        font-size: 20px;
+    }
+    .contact_us{
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 680px) and (max-width: 740px) {
+    .title_bar{
+        font-size: 25px;
+    }
+    .list_bar{
+        margin-top: 7vh;
+    }
+    #video_style{
+        height: 56vh;
+    }
+    .smoke_effect,
+    .smoke_style1,
+    .smoke_style2,
+    .smoke_style3,
+    .smoke_style4,
+    .smoke_style5,
+    .smoke_style6{
+        height: 18vh;
+    }
+    .nav_word{
+        font-size: 18px;
+    }
+    #main_style{
+        height: 81vh;
+    }
+    .footer_para{
+        font-size: 14px;
+    }
+    .contact_us_label{
+        font-size: 20px;
+    }
+    .contact_us{
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 740px) and (max-width: 900px) {
+    .title_bar{
+        font-size: 27px;
+    }
+    .list_bar{
+        margin-top: 5vh;
+    }
+    #main_style{
+        height: 85vh;
+    }
+    .footer_style{
+        height: 22vh;
+    }
+    #video_style{
+        height: 62vh;
+    }
+    .smoke_effect,
+    .smoke_style1,
+    .smoke_style2,
+    .smoke_style3,
+    .smoke_style4,
+    .smoke_style5,
+    .smoke_style6{
+        height: 18vh;
+    }
+    .nav_word{
+        font-size: 18px;
+    }
+    .footer_para{
+        font-size: 14px;
+    }
+    .contact_us_label{
+        font-size: 20px;
+    }
+    .contact_us{
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 900px) and (max-width: 950px) {
+    .title_bar{
+        font-size: 30px;
+    }
+    .list_bar{
+        margin-top: 7vh;
+    }
+    .nav_word{
+        font-size: 21px;
+    }
+    .smoke_effect,
+    .smoke_style1,
+    .smoke_style2,
+    .smoke_style3,
+    .smoke_style4,
+    .smoke_style5,
+    .smoke_style6{
+        height: 19vh;
+    }
+    #video_style{
+        height: 67vh;
+    }
+    #main_style{
+        height: 80vh;
+    }
+    .nav_bar{
+        height: 80%;
+    }
+    .footer_para{
+        font-size: 15px;
+    }
+    .contact_us_label{
+        font-size: 20px;
+    }
+    .contact_us{
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 950px) and (max-width: 1000px) {
+    .title_bar{
+        font-size: 35px;
+    }
+    #video_style{
+        height: 78vh;
+    }
+    #main_style{
+        height: 90vh;
+    }
+    .nav_bar{
+        height: 89%;
+    }
+    .list_bar{
+        margin-top: 8vh;
+    }
+    #header_screen{
+        height: 25%;
+    }
+    .nav_word{
+        font-size: 21px;
+    }
+    .footer_para{
+        font-size: 16px;
+    }
+    .contact_us_label{
+        font-size: 20px;
+    }
+    .contact_us{
+        font-size: 18px;
+    }
+}
